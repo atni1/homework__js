@@ -1,18 +1,18 @@
 // Задание 3
 
-var a = prompt('Введите первое число', '');
-var b = prompt('Введите второе число', '');
-var x;
-if (a >= 0 && b >= 0) {
-    x = a - b;
-    alert(x);
-} else if (a < 0 && b < 0){
-        x = a * b
-        alert(x);
-} else if (a >= 0 && b < 0 || a <= 0 && b > 0) {
-        x = +a + +b;
-        alert();
-}
+// var a = prompt('Введите первое число', '');
+// var b = prompt('Введите второе число', '');
+// var x;
+// if (a >= 0 && b >= 0) {
+//     x = a - b;
+//     alert(x);
+// } else if (a < 0 && b < 0) {
+//         x = a * b
+//         alert(x);
+// } else if (a >= 0 && b < 0 || a <= 0 && b > 0) {
+//         x = +a + +b;
+//         alert(x);
+// }
 
 
 // //Задание 4
@@ -53,21 +53,22 @@ if (a >= 0 && b >= 0) {
 
 
 // Задание 5
+
 // c = prompt('add a number')
 // d = prompt('add a number')
-// function sum(c, d) {
-//     return +c + +d; 
-// }
-// function diff(c, d) {
-//     confirm
-//     return c - d
-// }
-// function split(c, d) {
-//     return c / d
-// }
-// function multiplication(c, d) {
-//     return c * d
-// }
+function sum() {
+    return +c + +d; 
+}
+function diff(c, d) {
+    confirm
+    return c - d
+}
+function split(c, d) {
+    return c / d
+}
+function multiplication(c, d) {
+    return c * d
+}
 // let sumResult = sum(c, d)
 // alert('Результат сложения ' + sumResult)
 // let diffResult = diff(c, d)
@@ -79,26 +80,26 @@ if (a >= 0 && b >= 0) {
 
 // Задание 6
 
-// function mathOperation(arg1, arg2, operation) {
-//     switch (operation) {
-//         case 'sum':
-//             return arg1 + arg2;
-//             break;
-//         case 'diff':
-//             return arg1 - arg2;
-//             break;  
-//         case 'split':
-//             return arg1 / arg2;
-//             break;  
-//         case 'multiplication':
-//             return arg1 * arg2;
-//             break;         
-//         default: 
-//             break;
-//     }
-// }
-// let result = mathOperation(2, 3, 'multiplication')
-// alert(result)
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case 'sum':
+            return sum(arg1, arg2);
+            
+        case 'diff':
+            return diff(arg1, arg2);
+            break;  
+        case 'split':
+            return split(arg1, arg2);
+            break;  
+        case 'multiplication':
+            return multiplication(arg1, arg2);
+            break;         
+        default: 
+            break;
+    }
+}
+let result = mathOperation(45, 3, 'split')
+alert(result)
 
 
 
