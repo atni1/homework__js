@@ -1,5 +1,5 @@
 let num = 100
-let i = 2
+let i = 0
 
 nextPrime:
 while (i < num) {
