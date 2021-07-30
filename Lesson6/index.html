@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {margin: 0; padding: 0;}
+        #wrapper {
+          width: 50%;
+          margin: 10px;
+        }
+        #cart_content {
+          margin-top: 10px;
+          padding: 5px;
+          border: 1px solid #060;
+        }
+        .item_box {
+          border: 1px solid #999;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+        .shopping_list {
+            width: 100%;
+          margin-top: 10px;
+            border-collapse: collapse;
+        }
+        .shopping_list td,
+        .shopping_list th {
+            padding: 10px;
+            border: 1px solid #AAAAAA;
+        }
+        .shopping_list th:last-child {
+          width: 1%;
+        }
+        .shopping_list tr:last-child {
+          background-color: #EDEDED;
+          font-weight: bold;
+        }
+        .del_item {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #f00;
+          text-align: center;
+          line-height: 30px;
+          color: #fff;
+          cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <div class="item_box">
+        <h3 class="item_title">Samsung Galaxy S10</h3>
+        <p>Цена: <span class="item_price">20</span>$</p>
+        <button class="add_item" data-id="7">Купить</button>
+      </div>
+      <div class="item_box">
+        <h3 class="item_title">LG Optimus G E100500</h3>
+        <p>Цена: <span class="item_price">100</span>$</p>
+        <button class="add_item" data-id="2">Купить</button>
+      </div>
+        <div class="item_box">
+        <h3 class="item_title">Nokia 2110</h3>
+        <p>Цена: <span class="item_price">1000</span>$</p>
+        <button class="add_item" data-id="5">Купить</button>
+      </div>
+      <button id="checkout">Оформить заказ</button>
+      <button id="clear_cart">Очистить корзину</button>
+      <div id="cart_content"></div>
+</body>
+    <script src="script.js"></script>
+</html>
